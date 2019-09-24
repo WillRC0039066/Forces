@@ -36,6 +36,19 @@ namespace Fources
             return (Math.Acos(x) * 180 / Math.PI);
         }
 
+        private void Calculate_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
