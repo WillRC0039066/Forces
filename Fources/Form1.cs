@@ -47,7 +47,7 @@ namespace Fources
             catch
             {
                 MessageBox.Show(textBox1.Text + "\nDo not input Letters");
-                force = 0.0;
+                force = 0;
             }
 
             try
@@ -57,7 +57,7 @@ namespace Fources
             catch
             {
                 MessageBox.Show(textBox1.Text + "Numbers only");
-                angle = 0.0;
+                angle = 0;
             }
 
 
