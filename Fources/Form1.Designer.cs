@@ -91,7 +91,6 @@
             this.angle.Name = "angle";
             this.angle.Size = new System.Drawing.Size(59, 38);
             this.angle.TabIndex = 5;
-            this.angle.TextChanged += new System.EventHandler(this.Angle_TextChanged);
             // 
             // label3
             // 
