@@ -38,9 +38,16 @@ namespace Fources
 
         private void Calculate_Click(object sender, EventArgs e)
         {
+            double force = double.Parse(textBox1.Text);
+            double angle = double.Parse(label2.Text);
 
+
+            double Fx = force * cos(angle);
+            label2.Text = "Fx =" + Fx;
+
+            double Fy = force * sin(angle);
+            label1.Text = "Fy =" + Fy;
         }
-
-       
+               
     }
 }
