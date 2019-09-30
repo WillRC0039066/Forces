@@ -38,8 +38,27 @@ namespace Fources
 
         private void Calculate_Click(object sender, EventArgs e)
         {
-            double force = double.Parse(textBox1.Text);
-            double angle = double.Parse(textBox1.Text);
+            double force,angle;
+
+            try
+            {
+                force = double.Parse(textBox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show(textBox1.Text + "\nDo not input Letters");
+                force = 0.0;
+            }
+
+            try
+            {
+                angle = double.Parse(textBox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show(textBox1.Text + "Numbers only");
+                angle = 0.0;
+            }
 
 
             double Fx = force * cos(angle);
